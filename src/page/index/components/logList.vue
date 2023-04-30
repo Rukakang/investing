@@ -3,10 +3,6 @@
   <div class="logContainer">
     <el-card class="box-card">
       <div slot="header" class="clearfix">
-        <a :href="github" target="_blank">
-           <icon-svg icon-class="iconGithub" />
-        </a>
-        <span>项目更新日志：</span>
       </div>
       <div class="logArea el-scrollbar">
             <div class="item" v-for="(item,index) in logsData" :key="index">
@@ -29,14 +25,12 @@
 
 <script>
   import logsData from "@/assets/datas/logs.json";
-  import { github } from "@/utils/env";
 
   export default {
     name:'logList',
     data() {
       return {
         logsData:logsData.data,
-        github:github
       };
     }
   }

@@ -17,12 +17,6 @@ import '@/mockjs'; //  mock数据
 // i18n国际化
 import i18n from "@/lang";
 
-// 分享功能集合
-import {shareConfig} from './utils/share';
-
-Vue.prototype.shareConfig = shareConfig;
-
-
 Vue.config.productionTip = false;
 
 // 字体图标线上地址,在index中使用cdn载入;

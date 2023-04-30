@@ -4,9 +4,6 @@
     <el-row>
       <el-col>
         <el-card :body-style="{ padding: '0px' }" class="cardBody">
-          <a :href="github" target="_blank">
-             <img :src="userImg" class="userImg" alt="">
-          </a>
           <div class="progress wflex">
             <div class="rflex">
               <span class="title">vue:</span><el-progress :percentage="100" status="success"></el-progress>
@@ -35,14 +32,12 @@
 
 <script>
   import userImg from "@/assets/img/avatar-3.png";
-  import { github } from "@/utils/env";
 
 export default {
   name:'cardList',
   data() {
     return {
         userImg:userImg,
-        github:github
     };
   }
 }
