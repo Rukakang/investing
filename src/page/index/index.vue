@@ -115,7 +115,6 @@
 </template>
 
 <script>
-	import echarts from 'echarts'
 	import salesTable from "./components/salesTable";  // 销售数据表格
 	import commentList from "./components/commentList";  // 用户评论列表
 	import cardList from "./components/cardList";  // card列表

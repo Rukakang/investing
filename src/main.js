@@ -14,9 +14,11 @@ import '@/permission' // permission control
 
 import '@/mockjs'; //  mock数据
 
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts
+
 // i18n国际化
 import i18n from "@/lang";
-
 Vue.config.productionTip = false;
 
 // 字体图标线上地址,在index中使用cdn载入;

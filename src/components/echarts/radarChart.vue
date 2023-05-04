@@ -3,7 +3,6 @@
 </template>
 
 <script>
-    import echarts from 'echarts'
     import echartsTheme from "cps/echarts/theme/westeros.json";
     
     export default {
@@ -27,7 +26,7 @@
         methods: {
             loadChart(){
                 this.$nextTick(() => {
-                    this.myChart = echarts.init(document.getElementById(this.id));
+                    this.myChart = this.$echarts.init(document.getElementById(this.id));
                     this.myChart.setOption(this.initOption());
                 })
             },
