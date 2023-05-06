@@ -70,8 +70,8 @@ export default new Router({
 //异步路由（需要权限的页面）
 export const asyncRouterMap = [
     {
-        path: '/fundManage',
-        name: 'fundManage',
+        path: '/snapsShots',
+        name: 'snapsShots',
         meta: {
             title: '快照',
             icon: 'iconpay3',
@@ -79,13 +79,13 @@ export const asyncRouterMap = [
         component: Layout,
         children: [
             {
-                path: 'fundList',
-                name: 'fundList',
+                path: 'description',
+                name: 'description',
                 meta: {
                     title: '描述',
                     routerType: 'leftmenu'
                 },
-                component: () => import('@/page/fundList/fundList'),
+                component: () => import('@/page/snapsShots/description'),
             },
         ]
     },

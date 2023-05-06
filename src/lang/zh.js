@@ -8,8 +8,8 @@ const zh = {
       hi: '您好',
       index: '首页',
 
-      fundManage: '快照',
-      fundList: '描述',
+      snapsShots: '快照',
+      description: '描述',
       permission: '权限设置',
       pagePer: '页面权限',
       directivePer: '按钮权限',
