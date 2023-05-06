@@ -70,13 +70,13 @@ export default {
         userList = {
             roles: ['admin'],
             name:'admin',
-            avatar:'https://wx.qlogo.cn/mmopen/vi_32/un2HbJJc6eiaviaibvMgiasFNlVDlNOb9E6WCpCrsO4wMMhHIbsvTkAbIehLwROVFlu8dLMcg00t3ZtOcgCCdcxlZA/132'
+            avatar:'https://img1.baidu.com/it/u=2766430024,2609720491&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500'
         }
     }else if(data.token === 'editor'){
         userList = {
             roles: ['editor'],
             name:'editor',
-            avatar:'https://mirror-gold-cdn.xitu.io/168e088859e325b9d85?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1'
+            avatar:'https://img95.699pic.com/xsj/03/2y/w9.jpg%21/fw/700/watermark/url/L3hzai93YXRlcl9kZXRhaWwyLnBuZw/align/southeast'
         }
     }else{
         userList = {}

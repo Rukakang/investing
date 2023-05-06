@@ -70,39 +70,10 @@ export default new Router({
 //异步路由（需要权限的页面）
 export const asyncRouterMap = [
     {
-        path: '/infoManage',
-        name: 'infoManage',
-        meta: {
-            title: '信息管理',
-            icon: 'iconinfo',
-        },
-        component: Layout,
-        children: [
-            {
-                path: 'infoShow',
-                name: 'infoShow',
-                meta: {
-                    title: '个人信息',
-                    icon: 'iconinfo',
-                    routerType: 'leftmenu',
-                    titleList: [
-                        {"path": "infoShow1", "title": "个人信息子菜单1"},
-                        {"path": "infoShow2", "title": "个人信息子菜单2"},
-                        {"path": "infoShow3", "title": "个人信息子菜单3"},
-                        {"path": "infoShow4", "title": "个人信息子菜单4"},
-                        {"path": "infoShow5", "title": "个人信息子菜单5"}
-                    ]
-                },
-                component: Content,
-                children: filterTopRouterMap('infoShow')
-            },
-        ]
-    },
-    {
         path: '/fundManage',
         name: 'fundManage',
         meta: {
-            title: '资金管理',
+            title: '快照',
             icon: 'iconpay3',
         },
         component: Layout,
@@ -111,56 +82,11 @@ export const asyncRouterMap = [
                 path: 'fundList',
                 name: 'fundList',
                 meta: {
-                    title: '资金流水',
+                    title: '描述',
                     routerType: 'leftmenu'
                 },
                 component: () => import('@/page/fundList/fundList'),
             },
-            {
-                path: 'chinaTabsList',
-                name: 'chinaTabsList',
-                meta: {
-                    title: '区域投资',
-                    routerType: 'leftmenu'
-                },
-                component: () => import('@/page/fundList/chinaTabsList'),
-            }
-        ]
-    },
-    {
-        path: '/fundData',
-        name: 'fundData',
-        meta: {
-            title: '资金数据',
-            icon: 'iconecharts',
-        },
-        component: Layout,
-        redirect: '/fundData/fundPosition',
-        children: [
-            {
-                path: 'fundPosition',
-                name: 'fundPosition',
-                meta: {
-                    title: '投资分布'
-                },
-                component: () => import('@/page/fundData/fundPosition')
-            },
-            {
-                path: 'typePosition',
-                name: 'typePosition',
-                meta: {
-                    title: '项目分布'
-                },
-                component: () => import('@/page/fundData/typePosition')
-            },
-            {
-                path: 'incomePayPosition',
-                name: 'incomePayPosition',
-                meta: {
-                    title: '收支统计'
-                },
-                component: () => import('@/page/fundData/incomePayPosition')
-            }
         ]
     },
     {path: '*', redirect: '/404', hidden: true}

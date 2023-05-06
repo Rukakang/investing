@@ -4,7 +4,7 @@
       <section class="form_contianer">
         <div class='titleArea rflex'>
           <img class="logo" :src="logo" alt="quantitative investing">
-          <span class='title'>量化<i>Admin</i></span>
+          <span class='title'>investing <i>Admin</i></span>
         </div>
         <el-form :model="loginForm" :rules="rules" ref="loginForm" class="loginForm">
           <el-form-item prop="username" class="login-item">
